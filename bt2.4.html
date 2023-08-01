@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function kiemTraKyTuSo(kyTu) {
+            return !isNaN(kyTu) && !isNaN(parseFloat(kyTu));
+        }
+
+        // Gọi hàm để kiểm tra ký tự
+        let kyTu = '5';
+        let laKyTuSo = kiemTraKyTuSo(kyTu);
+        console.log(laKyTuSo);
+    </script>
+</body>
+
+</html>

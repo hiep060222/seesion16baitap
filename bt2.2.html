@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tinhDienTichHinhTron(r) {
+            let dienTich = Math.PI * Math.pow(r, 2);
+            return dienTich;
+        }
+
+        function tinhChuViHinhTron(r) {
+            let chuVi = 2 * Math.PI * r;
+            return chuVi;
+        }
+
+        // Gọi hàm để tính diện tích và chu vi hình tròn
+        let banKinh = 4;
+        let dienTich = tinhDienTichHinhTron(banKinh);
+        let chuVi = tinhChuViHinhTron(banKinh);
+        console.log("Diện tích hình tròn là: " + dienTich);
+        console.log("Chu vi hình tròn là: " + chuVi);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function tinhGiaiThua(n) {
+            if (n === 0) {
+                return 1;
+            }
+
+            let giaiThua = 1;
+            for (let i = 1; i <= n; i++) {
+                giaiThua *= i;
+            }
+
+            return giaiThua;
+        }
+
+        // Gọi hàm để tính giai thừa của một số nguyên
+        let soNguyen = 5;
+        let giaiThua = tinhGiaiThua(soNguyen);
+        console.log("Giai thừa của " + soNguyen + " là: " + giaiThua);
+
+    </script>
+</body>
+
+</html>

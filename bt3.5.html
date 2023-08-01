@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function hoanDoiHaiSo(a, b) {
+            let temp = a;
+            a = b;
+            b = temp;
+            return [a, b];
+        }
+
+        // Nhập hai số từ người dùng
+        // let so1 = parseInt(prompt("Nhập số thứ nhất:"));
+        // let so2 = parseInt(prompt("Nhập số thứ hai:"));
+
+        // // Gọi hàm hoanDoiHaiSo để hoán đổi giá trị
+        let [so_1, so_2] = hoanDoiHaiSo(so1, so2);
+
+        // console.log("Sau khi hoán đổi:");
+        console.log("Số thứ nhất: " + 5);
+        console.log("Số thứ hai: " + 7);
+
+    </script>
+</body>
+
+</html>

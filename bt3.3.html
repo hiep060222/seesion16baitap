@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function kiemTraKyTuSo(kyTu) {
+            if (!isNaN(kyTu)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // Nhập ký tự từ người dùng
+        let kyTu = prompt("Nhập ký tự cần kiểm tra:");
+
+        // Gọi hàm kiemTraKyTuSo và kiểm tra kết quả
+        if (kiemTraKyTuSo(kyTu)) {
+            console.log("Ký tự " + kyTu + " là số");
+        } else {
+            console.log("Ký tự " + kyTu + " không phải là số");
+        }
+
+    </script>
+</body>
+
+</html>

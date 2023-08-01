@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function kiemTraSoNguyenDuong(so) {
+            if (Number.isInteger(so) && so > 0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        // Nhập số từ người dùng
+        let so = prompt("Nhập số cần kiểm tra:");
+
+        // Chuyển đổi giá trị nhập vào sang kiểu số
+        so = parseInt(so);
+
+        // Gọi hàm kiemTraSoNguyenDuong và kiểm tra kết quả
+        if (kiemTraSoNguyenDuong(so)) {
+            console.log("Số " + so + " là số nguyên dương");
+        } else {
+            console.log("Số " + so + " không phải là số nguyên dương");
+        }
+
+    </script>
+</body>
+
+</html>

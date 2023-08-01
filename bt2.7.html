@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function doiChoHaiSo(a, b) {
+            let temp = a;
+            a = b;
+            b = temp;
+            return [a, b];
+        }
+        // Gọi hàm để đổi chỗ hai số nguyên
+        let so1 = 5;
+        let so2 = 3;
+        let ketQua = doiChoHaiSo(so1, so2);
+        console.log("Sau khi đổi chỗ, số 1 là: " + ketQua[0] + ", số 2 là: " + ketQua[1]);
+    </script>
+</body>
+
+</html>
